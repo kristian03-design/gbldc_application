@@ -1,0 +1,97 @@
+name: gbldc_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  geolocator: ^10.1.0
+  geocoding: ^2.1.0
+  intl: ^0.17.0
+  intl_phone_field: ^3.2.0
+  image_picker: ^1.0.4
+  country_picker: ^2.0.15
+  lottie: ^2.7.0
+  file_picker: ^10.2.0
+  cupertino_icons: ^1.0.8
+  iconsax: ^0.0.8
+  flutter_slidable: ^3.0.1
+  carousel_slider:  ^5.0.0
+  google_sign_in: ^6.2.1
+  flutter_facebook_auth: ^6.0.3
+  local_auth: ^2.1.8
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.12.0
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0  
+
+flutter_icons:
+    android: true
+    ios: true
+    image_path: "assets/images/logocoop.png"
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/logocoop.png
+    - assets/images/facebook.svg
+    - assets/images/google.png
+    - assets/images/bg.jpg
+    - assets/images/phone.jpg
+    - assets/images/joinus.jpg
+    - assets/images/help.jpg
+    - assets/images/2x2.jpg
+    - assets/images/Security-bank.jpeg
+    - assets/images/bdo.png
+    - assets/images/pnb.png
+    - assets/images/union-bank.jpeg
+    - assets/images/bpi.jpeg
+    - assets/images/g-cash.jpeg
+    - assets/images/maya.jpeg
+    - assets/images/master-card.jpeg
+    - assets/images/visa-card.png
+    - assets/images/gotyme.jpeg
+    - assets/images/id_card_example.jpeg
+    - assets/images/id_card_blur.png
+    - assets/images/id_card_dark.jpeg
+    - assets/images/philippine-flag.avif
+    - assets/images/selfie_illustration.jpg
+    - assets/images/animations/Check-Animation.json
+    - assets/images/facebook.jpeg
+    - assets/images/loan.jpg
+    - assets/images/gbldc_paypal.png
+    - assets/images/bank-transfer.png
+    - assets/images/gbldc-verify-account.jpg
+    - assets/images/gbldc-forgot-password.png
+    - assets/images/gbldc-forgot-password.jpg
+    - assets/images/finance-tips.png
+    - assets/images/gbldc-explore-services.png
+    - assets/images/gbldc-borrow-money.png
+    - assets/images/event1.jpg
+    - assets/images/event2.jpg
+    - assets/images/event3.jpg
+    - assets/images/event4.jpg
+    - assets/images/google-logo.png
+    - assets/images/facebook-logo.png
+    - assets/images/facebook.png
+
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: asset/fonts/Poppins-Regular.ttf
+        - asset: asset/fonts/Poppins-Bold.ttf
+        - asset: asset/fonts/Poppins-Medium.ttf
+        - asset: asset/fonts/Poppins-Light.ttf
+        - asset: asset/fonts/Poppins-ExtraLight.ttf
+        - asset: asset/fonts/Poppins-SemiBold.ttf
+        - asset: asset/fonts/Poppins-Thin.ttf
+        - asset: asset/fonts/Poppins-Black.ttf
+          weight: 700
