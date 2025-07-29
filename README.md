@@ -1,6 +1,6 @@
 # 📱 GBLDC Mobile Application
 
-A modern and secure mobile application for the **Greater Bulacan Livelihood Development Cooperative (GBLDC)**, built using Flutter. This app allows members to manage loans, access cooperative services, track credit scores, and connect with support.
+A modern, secure, and user-friendly mobile app developed for the **Greater Bulacan Livelihood Development Cooperative (GBLDC)**. This app helps cooperative members access financial services like loans, track credit scores, manage their accounts, and contact support—all in one place.
 
 ---
 
@@ -8,14 +8,12 @@ A modern and secure mobile application for the **Greater Bulacan Livelihood Deve
 
 - 🔐 Login, OTP verification, and PIN creation
 - 🧾 Apply for and manage loans
-- 📊 Credit score tracking
-- 💳 Payment history & add bank/payment methods
+- 📊 Credit score monitoring
+- 💳 Add bank/payment methods and view payment history
 - 📚 Explore cooperative services
 - 📞 Customer support and help center
-- 📝 Submission confirmation and tracking
-- 👤 Profile management & account security
-- 📢 News, announcements, and splash screen on launch
-- 
+- 📝 Profile management & security
+- 📢 News, announcements, and splash intro
 
 ---
 
@@ -25,107 +23,109 @@ A modern and secure mobile application for the **Greater Bulacan Livelihood Deve
 |------------------|----------------------------------------|
 | ![Flutter](https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white) | Cross-platform UI toolkit |
 | ![Dart](https://img.shields.io/badge/Dart-0175C2?logo=dart&logoColor=white)         | Programming language |
-| ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black) | Auth, database, and cloud storage |
-| ![Android](https://img.shields.io/badge/Android-3DDC84?logo=android&logoColor=white) | Android platform |
-| ![iOS](https://img.shields.io/badge/iOS-000000?logo=apple&logoColor=white)           | iOS platform |
-| ![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)       | Linux build target |
-| ![Windows](https://img.shields.io/badge/Windows-0078D6?logo=windows&logoColor=white) | Windows build target |
-| ![macOS](https://img.shields.io/badge/macOS-000000?logo=apple&logoColor=white)       | macOS build target |
+| ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black) | Auth, database, and storage |
+| ![Android](https://img.shields.io/badge/Android-3DDC84?logo=android&logoColor=white) | Android support |
+| ![iOS](https://img.shields.io/badge/iOS-000000?logo=apple&logoColor=white)           | iOS support |
+| ![Windows](https://img.shields.io/badge/Windows-0078D6?logo=windows&logoColor=white) | Windows support |
+| ![macOS](https://img.shields.io/badge/macOS-000000?logo=apple&logoColor=white)       | macOS support |
+| ![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)       | Linux support |
+| ![VSCode](https://img.shields.io/badge/Editor-VSCode-007ACC?logo=visual-studio-code&logoColor=white) | Development environment |
 
 ---
 
 ## 🧩 Project Structure
+/
 ├── android/ # Android native code
 ├── ios/ # iOS native code
-├── lib/ # Main Flutter source code
+├── lib/ # Main Flutter source
 │ ├── landing_page.dart
-│ ├── loan-details.dart
 │ ├── credit_score_page.dart
+│ ├── loan-details.dart
 │ ├── explore_services_page.dart
-│ ├── create-pin.dart
+│ ├── add_bank_account.dart
 │ ├── ...
 ├── assets/
 │ ├── fonts/
 │ └── images/
-├── web/ # Web platform support
-├── macos/, windows/, linux/ # Desktop support
-├── pubspec.yaml # Project metadata and dependencies
+├── web/, windows/, linux/, macos/ # Desktop and web support
+├── test/ # Unit and widget tests
+├── pubspec.yaml # Dependencies and assets
 
 ---
 
-## 🧪 Screens and Pages
+## ⚙️ Installation & Setup
 
-- `landing_page.dart` – Home screen
-- `credit_score_page.dart` – Credit score dashboard
-- `loan-details.dart` – Loan info and tracking
-- `explore_services_page.dart` – Browse cooperative services
-- `add_bank_account.dart`, `add_payment_method.dart` – Manage financial data
-- `contact-support-page.dart`, `help&support.dart` – Support channels
-- `about_us_page.dart` – Cooperative info
-- `forgot_password.dart`, `enter_otp_code.dart`, `create_pin.dart` – Account security
-- `gblcdc_splashscreen.dart` – Animated splash screen
+### 🔧 Prerequisites
 
----
+- [Flutter SDK](https://docs.flutter.dev/get-started/install)
+- Dart (included with Flutter)
+- Android Studio or VS Code with Flutter plugin
+- Git, AVD/iOS Simulator setup
+- (Optional) Firebase account for backend
 
-## ⚙️ Installation
+### 📥 Installation Steps
 
-1. **Clone the repo**
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/kristian03-design/gbldc_application.git
+   cd gbldc_application
+2. **Flutter Packages**
+    ```bash
+    flutter pub get
+3. Launch emulator or connect device
+   ```bash
+   flutter devices
+4. Run the App
+   ```bash
+   flutter run
 
-```bash
-git clone https://github.com/kristian03-design/gbldc_application.git
-cd gbldc_application
+💡 Screens (Samples)
+LandingPage – Home screen
 
-2. Install dependencies
+CreditScorePage – Credit score overview
 
-```bash
-flutter pub get
-Run the app
+LoanDetails – Loan status and information
 
-bash
-Copy
-Edit
-flutter run
-Ensure a device or emulator is running.
+ExploreServicesPage – List of cooperative offerings
 
-📸 UI Screenshots
-(Insert screenshots of key screens here: dashboard, credit score, services, etc.)
+AddBankAccount / Payment Methods – Manage accounts
 
-3. 🧪 Testing
-To run tests:
-```bash
-flutter test
-You can add more unit and widget tests in the test/ directory.
+OTP / PIN Pages – Secure verification and login
+
+You can add UI screenshots here in the future for documentation.
 
 📌 Roadmap
  Implement push notifications
 
- Add dark mode toggle
+ Biometric login support
 
- Connect with real-time backend
+ API integration with backend
 
- Enable biometric login
+ Dark mode and accessibility improvements
 
- Deploy to Play Store and App Store
+ Launch to Google Play and App Store
 
 🤝 Contributing
-Contributions, issues, and feature requests are welcome!
+Contributions are welcome!
 
-Fork the repository
+Fork the repo
 
-Create your branch: git checkout -b feature/my-feature
+Create a new branch: git checkout -b feature/your-feature
 
-Commit your changes: git commit -m 'Add my feature'
+Commit changes: git commit -m 'Add your feature'
 
-Push to the branch: git push origin feature/my-feature
+Push to GitHub: git push origin feature/your-feature
 
-Submit a pull request
+Open a pull request
 
 📄 License
-This project is licensed under the MIT License. See LICENSE file for more details.
+This project is open-source under the MIT License.
 
-📬 Contact
+👤 Author
 Kristian Hernandez
-📧 [Your Email Here]
+📧 [hkristianlloyd2@gmail.com]
 🔗 GitHub Profile
+
+
 
 
