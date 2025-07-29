@@ -34,7 +34,6 @@ A modern, secure, and user-friendly mobile app developed for the **Greater Bulac
 ---
 
 ## 🧩 Project Structure
-/
 ├── android/ # Android native code
 ├── ios/ # iOS native code
 ├── lib/ # Main Flutter source
